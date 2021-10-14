@@ -1,0 +1,10 @@
+schema:
+  - http://localhost:4466:
+      headers:
+        Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InNlcnZpY2UiOiJkZWZhdWx0QGRlZmF1bHQiLCJyb2xlcyI6WyJhZG1pbiJdfSwiaWF0IjoxNjM0MjE0MDE2LCJleHAiOjE2MzQ4MTg4MTZ9.D62Gr_t9Z0TjnTkhlSgjyGOXKN2FGm7XwRJsTtPW9ik
+extensions:
+  codegen:
+    generates:
+      ./src/generated/prisma.graphql:
+        plugins:
+          - schema-ast
