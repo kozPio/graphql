@@ -8,7 +8,7 @@ import getClient from './utils/getClient';
 const client = getClient();
 
 
-beforeEach(seedDatabase)
+beforeEach(seedDatabase, 15000)
 
 test('Should create new user', async ()=>{
   const createUser = gql`
