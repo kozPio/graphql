@@ -13,13 +13,22 @@
   "jest": {
     "globalSetup": "./tests/jest/globalSetup.js",
     "globalTeardown": "./tests/jest/globalTeardown.js",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "setupTestFrameworkScriptFile": "./tests/jest/setupTests.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "apollo-boost": "^0.1.14",
+    "apollo-cache-inmemory": "^1.2.10",
+    "apollo-client": "^2.4.2",
+    "apollo-link": "^1.2.14",
+    "apollo-link-error": "^1.1.1",
+    "apollo-link-http": "^1.5.5",
+    "apollo-link-ws": "^1.0.20",
+    "apollo-utilities": "^1.0.21",
+    "appollo-client": "file:appollo-client",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -27,12 +36,14 @@
     "bcryptjs": "^2.4.3",
     "cross-fetch": "^2.2.2",
     "env-cmd": "^8.0.2",
-    "graphql": "^14.0.2",
+    "graphql": "^0.13.2",
     "graphql-cli": "^2.16.4",
     "graphql-yoga": "^1.18.3",
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^1.17.5",
-    "prisma-binding": "^2.1.1"
+    "prisma-binding": "^2.1.1",
+    "subscriptions-transport-ws": "^0.9.15",
+    "ws": "^8.2.3"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^1.20.0",
